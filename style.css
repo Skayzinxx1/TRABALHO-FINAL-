@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  z-index: 10;
+}
+
+.navbar .logo {
+  font-weight: 500;
+  color: #79cfd9;
+  letter-spacing: 1px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+
+.navbar a:hover {
+  color: #79cfd9;
+}
+
+.navbar .icons span {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* ocupa a tela toda */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* preenche o espaço */
+  z-index: 0;
+  filter: brightness(70%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  letter-spacing: 3px;
+  color: #e5f9f7; /* azul Tiffany */
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  color: #ffffff;
+}
+
+.btn {
+  background-color: #81d8d0;
+  color: white;
+  padding: 12px 28px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #5ccbc2;
+}
+
+/* Coleção */
+.colecao {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px 10%;
+  gap: 40px;
+  background: #f9ffff;
+}
+
+.colecao .texto {
+  max-width: 500px;
+}
+
+.colecao h2 {
+  font-size: 45px;
+  color: #222;
+  margin: 15px 0;
+}
+
+.colecao .sub {
+  color: #79cfd9;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.colecao p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.botoes {
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.primario {
+  background: #79cfd9;
+  color: white;
+}
+
+.primario:hover {
+  background: #62bbc3;
+}
+
+.secundario {
+  border: 1px solid #79cfd9;
+  color: #79cfd9;
+}
+
+.secundario:hover {
+  background: #e9f9fa;
+}
+
+.colecao img {
+  width: 420px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Coleções */
+.colecoes {
+  text-align: center;
+  padding: 100px 10%;
+}
+
+.colecoes h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.colecoes p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 15px;
+}
+
+.card p {
+  margin: 10px 0 20px;
+  color: #666;
+}
+
+/* Rodapé */
+footer {
+  background: #f5f7f7;
+  padding: 60px 10%;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-container h3 {
+  color: #79cfd9;
+}
+
+.footer-container ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.footer-container li {
+  margin: 6px 0;
+  color: #444;
+}
+
+.social a {
+  font-size: 20px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.copy {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Efeitos */
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease-in-out;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}

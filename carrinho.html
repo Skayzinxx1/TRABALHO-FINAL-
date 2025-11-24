@@ -6,6 +6,15 @@
     <title>Carrinho</title>
     <link rel="stylesheet" href="carrinho.css">
 </head>
+<script>
+  const hamburger = document.querySelector('.hamburger');
+ const navMenu = document.querySelector('nav ul');
+ 
+ hamburger.addEventListener('click', () => {
+   hamburger.classList.toggle('active');
+   navMenu.classList.toggle('open'); 
+ });
+   </script>
 <style>body {
     margin: 0;
     padding: 0;

@@ -7,13 +7,14 @@
   <link rel="stylesheet" href="historia.css">
 </head>
 <script>
-  const hamburguer = document.querySelector(".hamburger");
-  const nav = document.querySelector("nav");
-  
-  hamburguer.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
-  </script>
+  const hamburger = document.querySelector('.hamburger');
+ const navMenu = document.querySelector('nav ul');
+ 
+ hamburger.addEventListener('click', () => {
+   hamburger.classList.toggle('active');
+   navMenu.classList.toggle('open'); 
+ });
+   </script>
 <body>
 
   

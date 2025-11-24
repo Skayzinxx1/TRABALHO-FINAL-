@@ -8,13 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <script>
-  const hamburguer = document.querySelector(".hamburger");
-  const nav = document.querySelector("nav");
-  
-  hamburguer.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
-  </script>
+  const hamburger = document.querySelector('.hamburger');
+ const navMenu = document.querySelector('nav ul');
+ 
+ hamburger.addEventListener('click', () => {
+   hamburger.classList.toggle('active');
+   navMenu.classList.toggle('open'); 
+ });
+   </script>
 <body>
 <header class="navbar">
   <div class="hamburger"></div>

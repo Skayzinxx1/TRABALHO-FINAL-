@@ -6,6 +6,15 @@
     <title>Sobre Nós - Inova Joias</title>
     <link rel="stylesheet" href="sobre.css">
 </head>
+<script>
+  const hamburger = document.querySelector('.hamburger');
+ const navMenu = document.querySelector('nav ul');
+ 
+ hamburger.addEventListener('click', () => {
+   hamburger.classList.toggle('active');
+   navMenu.classList.toggle('open'); 
+ });
+   </script>
 <body>
 <header class="navbar">
   <div class="hamburger"></div>

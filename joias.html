@@ -3,277 +3,475 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AQUAMARINE | Alta Joalheria</title>
+  <title>Joias - Inova Joias</title>
   <link rel="stylesheet" href="style1.css" />
 </head>
+<style>
+
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.zoom {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.zoom:hover {
+    transform: scale(1.15); 
+}
+.card-produto {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s ease;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.06);
+}
+
+.card-produto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 10px 22px rgba(0,0,0,0.12);
+}
+
+
+.card-produto img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.4s;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+.card-produto img:hover {
+    transform: scale(1.06);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+}
+
+
+.card-produto h3 {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+
+.preco {
+    font-size: 19px;
+    color: #0088b8;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+
+.add-cart-btn {
+    background: linear-gradient(135deg, #19b3d1, #0e8ab1);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.add-cart-btn:hover {
+    background: linear-gradient(135deg, #0e8ab1, #0a6d8c);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.22);
+}
+
+.titulo-pagina {
+    text-align: center;
+    margin-top: 100px; 
+    margin-bottom: 30px; 
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.lg {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.lg-img {
+    height: 40px;     
+    width: auto;
+    object-fit: contain;
+}.navbar {
+  width: 100%;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #e4e4e4;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+
+</style>
+
 <body>
   <header class="navbar">
-    <div class="logo">INOVA <p class="limpo"  style="font-size: 20px;">joias</p></div>
+    <div class="lg">
+    <a class="zoom" href="index.html"><img src="img/Gemini_Generated_Image_98fier98fier98fi (1) (1).png" alt="Logo" class="lg-img"></a>
+</div>
     
   
     <nav>
       <ul class="menu">
-        <li class="dropdown">
-          <a href="#">Joias</a>
-
-          <div class="mega-menu">
-            <div class="mega-column">
-              <h3 class="mudacor">Compre por Categoria</h3>
-              <a href="#">Colares e Pingentes</a>
-              <a href="#">Brincos</a>
-              <a href="#">Pulseiras e Braceletes</a>
-              <a href="#">Anéis</a>
-              <a href="#">Broches</a>
-              <a href="#">Joias Masculinas</a>
-            </div>
-  
-            <div class="mega-column">
-              <h3>Seleções Especiais</h3>
-              <a href="#">Joias Icônicas</a>
-              <a href="#">Lançamentos</a>
-              <a href="#">Prata de Lei</a>
-              <a href="#">Ouro Amarelo</a>
-              <a href="#">Ouro Branco</a>
-              <a href="#">Ouro Rosé</a>
-              <a href="#">Joias com Diamantes</a>
-              <a href="#">Joias com Pérolas</a>
-            </div>
-            <img src="img/bracelet-collection.jpg" width="250">
-  
-          </div>
-        </li>
-
-        <li class="dropdown">
-          <a href="#">Presentes</a>
-
-          <div class="mega-menu">
-            <div class="mega-column">
-              <h3>Compre por Categoria</h3>
-              <a href="#">Colares e Pingentes</a>
-              <a href="#">Brincos</a>
-              <a href="#">Pulseiras e Braceletes</a>
-              <a href="#">Anéis</a>
-              <a href="#">Broches</a>
-              <a href="#">Joias Masculinas</a>
-            </div>
-  
-            <div class="mega-column">
-              <h3>Seleções Especiais</h3>
-              <a href="#">Joias Icônicas</a>
-              <a href="#">Lançamentos</a>
-              <a href="#">Prata de Lei</a>
-              <a href="#">Ouro Amarelo</a>
-              <a href="#">Ouro Branco</a>
-              <a href="#">Ouro Rosé</a>
-              <a href="#">Joias com Diamantes</a>
-              <a href="#">Joias com Pérolas</a>
-            </div>
-            <img src="img/bracelet-collection.jpg" width="250">
-  
-          </div>
-        </li>
-
-        <li class="dropdown">
-          <a href="#">Relógios</a>
-
-          <div class="mega-menu">
-            <div class="mega-column">
-              <h3>Compre por Categoria</h3>
-              <a href="#">Colares e Pingentes</a>
-              <a href="#">Brincos</a>
-              <a href="#">Pulseiras e Braceletes</a>
-              <a href="#">Anéis</a>
-              <a href="#">Broches</a>
-              <a href="#">Joias Masculinas</a>
-            </div>
-  
-            <div class="mega-column">
-              <h3>Seleções Especiais</h3>
-              <a href="#">Joias Icônicas</a>
-              <a href="#">Lançamentos</a>
-              <a href="#">Prata de Lei</a>
-              <a href="#">Ouro Amarelo</a>
-              <a href="#">Ouro Branco</a>
-              <a href="#">Ouro Rosé</a>
-              <a href="#">Joias com Diamantes</a>
-              <a href="#">Joias com Pérolas</a>
-            </div>
-            <img src="img/bracelet-collection.jpg" width="250">
-  
-          </div>
-        </li>
+        
+        
         
         <li class="dropdown">
-          <a href="#">Acessórios</a>
+          <a href="joias.html">Joias</a>
+            
+          <div class="mega-menu">
+            <div class="mega-column">
+              <h3 class="">Compre por Categoria</h3>
+              <a href="joias.html#Aneis">Aneis</a>
+              <a href="joias.html#Pulseiras">Pulseiras</a>
+              <a href="joias.html#Pingentes">Pingentes</a>
+              <a href="joias.html#Colares">Colares</a>
+            </div>
+  
+          
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <a href="aliança.html">Aliança</a>
 
           <div class="mega-menu">
             <div class="mega-column">
               <h3>Compre por Categoria</h3>
-              <a href="#">Colares e Pingentes</a>
-              <a href="#">Brincos</a>
-              <a href="#">Pulseiras e Braceletes</a>
-              <a href="#">Anéis</a>
-              <a href="#">Broches</a>
-              <a href="#">Joias Masculinas</a>
+              <a href="aliança.html#Casamento">Casamento</a>
+              <a href="aliança.html#Noivado">Noivado</a>
+              <a href="aliança.html#Namoro">Namoro</a>
+              <a href="aliança.html#5mm">5mm</a>
+              <a href="aliança.html#3mm">3mm</a>
+              <a href="aliança.html#2mm">2mm</a>
+            </div>
+        </li>
+
+        
+        
+        <li class="dropdown">
+          <a href="">Informações</a>
+
+          <div class="mega-menu">
+            <div class="mega-column">
+              <h3>Categoria</h3>
+              <a href="garantia.css">Garantia</a>
+              <a href="cuidados.html">Cuidados e convervação</a>
+              <a href="confianca.html">confiança</a>
             </div>
   
+            
+
+            <li class="dropdown">
+          <a href="#">Historia</a>
+
+          <div class="mega-menu">
             <div class="mega-column">
-              <h3>Seleções Especiais</h3>
-              <a href="#">Joias Icônicas</a>
-              <a href="#">Lançamentos</a>
-              <a href="#">Prata de Lei</a>
-              <a href="#">Ouro Amarelo</a>
-              <a href="#">Ouro Branco</a>
-              <a href="#">Ouro Rosé</a>
-              <a href="#">Joias com Diamantes</a>
-              <a href="#">Joias com Pérolas</a>
+              <h3>Categoria</h3>
+              <a href="historia.html">Tradição</a>
+              <a href="sobre.html">Sobre</a>
+              
             </div>
-            <img src="img/bracelet-collection.jpg" width="250">
+  
+           
+  
+          </div>
+        </li>
       </ul>
     </nav>
   
     <div class="icons">
-      <span>🔍</span>
-      <span>👤</span>
-      <span>🛒</span>
+    
+     <span><a href="sobre.html">👥</span></a>
+      <span><a href="carrinho.html">🛒</a></span>
     </div>
   </header>
+  <h1 class="titulo-pagina">JOIAS</h1>
 
+  
   <section class="produtos">
-    <h2 class="titulo-produtos">Joias</h2>
+  <h1 id="Aneis" style="text-align: center;">Aneis</h1>
+ 
+  <div class="grid-produtos">
 
-    <div class="grid-produtos">
+       <div class="card-produto">
+          <img src="img/Colar De Prata Com Pingente Redondo Na Pedra….jpg" height="200px" alt="Anel Estelar">
+          <h3>Anel Estelar</h3>
+          <p class="descricao">Inspirado no brilho das estrelas, simboliza proteção e luz.</p>
+          <p class="preco">R$ 1.290,00</p>
 
-        
-        <div class="card-produto">
-            <img src="img/colar1.jpg" alt="Colar 1">
-            <h3>Colar Elegance</h3>
-            <p class="preco">R$ 1.290,00</p>
+          <button class="add-cart-btn"
+              onclick="addItemFromPage('Anel Estelar', 1290.00, 'img/Colar De Prata Com Pingente Redondo Na Pedra….jpg')">
+              Comprar
+          </button>
+      </div>
+
+      <div class="card-produto">
+          <img src="jj/Custom Jewellery Design _ MADLY Bespoke Creations.jpg" alt="Anel Fio de Luz">
+          <h3>Anel Fio de Luz</h3>
+          <p class="descricao">Representa iluminação, paz e equilíbrio interior.</p>
+          <p class="preco">R$ 1.690,00</p>
+
+          <button class="add-cart-btn"
+              onclick="addItemFromPage('Anel Fio de Luz', 1690.00, 'jj/Custom Jewellery Design _ MADLY Bespoke Creations.jpg')">
+              Comprar
+          </button>
+      </div>
+
+      <div class="card-produto">
+          <img src="jj/Pensa num anel apaixonante… 🥹  Nessa joia….jpg" alt="Anel Pure Gold">
+          <h3>Anel Pure Gold</h3>
+          <p class="descricao">Elegância clássica com brilho dourado intenso.</p>
+          <p class="preco">R$ 2.190,00</p>
+
+          <button class="add-cart-btn"
+              onclick="addItemFromPage('Anel Pure Gold', 2190.00, 'jj/Pensa num anel apaixonante… 🥹  Nessa joia….jpg')">
+              Comprar
+          </button>
+      </div>
+
+      <div class="card-produto">
+          <img src="jj/Único 100% 925 prata esterlina aquamarine anel….jpg" alt="Anel Delicate">
+          <h3>Anel Delicate</h3>
+          <p class="descricao">Delicadeza e beleza em um design leve e sofisticado.</p>
+          <p class="preco">R$ 1.390,00</p>
+
+          <button class="add-cart-btn"
+              onclick="addItemFromPage('Anel Delicate', 1390.00, 'jj/Único 100% 925 prata esterlina aquamarine anel….jpg')">
+              Comprar
+          </button>
+      </div>
+
+  </div>
+</section>
+
+<section class="produtos">
+<h1 id="Pulseiras" style="text-align: center;">Pulseiras</h1>
+  <div class="grid-produtos"> 
+
+  
+
+     <div class="card-produto">
+          <img src="jj/download (6).jpg" alt="Pulseira Elegance">
+          <h3>Pulseira Elegance</h3>
+          <p class="descricao">Brilho suave e marcante para acompanhar qualquer estilo.</p>
+          <p class="preco">R$ 1.290,00</p>
+
+          <button class="add-cart-btn"
+              onclick="addItemFromPage('Pulseira Elegance', 1290.00, 'jj/download (6).jpg')">
+              Comprar
+          </button>
+      </div>
+
+      <div class="card-produto">
+          <img src="jj/Jewellery set.jpg" alt="Pulseira Luz Serena">
+          <h3>Pulseira Luz Serena</h3>
+          <p class="descricao">Um toque radiante para iluminar o visual.</p>
+          <p class="preco">R$ 1.690,00</p>
+
+          <button class="add-cart-btn"
+              onclick="addItemFromPage('Pulseira Luz Serena', 1690.00, 'jj/Jewellery set.jpg')">
+              Comprar
+          </button>
+      </div>
+
+      <div class="card-produto">
+          <img src="img/colar3.jpg" alt="Pulseira Blue Mystic">
+          <h3>Pulseira Blue Mystic</h3>
+          <p class="descricao">Pedra azul simbolizando sabedoria e equilíbrio.</p>
+          <p class="preco">R$ 2.190,00</p>
+
+          <button class="add-cart-btn"
+              onclick="addItemFromPage('Pulseira Blue Mystic', 2190.00, 'img/colar3.jpg')">
+              Comprar
+          </button>
+      </div>
+
+      <div class="card-produto">
+          <img src="img/colar4.jpg" alt="Pulseira Aquamarine Shine">
+          <h3>Pulseira Aquamarine Shine</h3>
+          <p class="descricao">Joia que transmite serenidade e leveza.</p>
+          <p class="preco">R$ 1.390,00</p>
+
+          <button class="add-cart-btn"
+              onclick="addItemFromPage('Pulseira Aquamarine Shine', 1390.00, 'img/colar4.jpg')">
+              Comprar
+          </button>
+      </div>
+
+</div>
+
+</section>
+
+<section class="produtos">
+<h1 id="Pingentes" style="text-align: center;">Pingentes</h1>
+  <div class="grid-produtos">
+
+      <div class="card-produto">
+          <img src="img/colar1.jpg" alt="Pingente Elegance Blue">
+          <h3>Pingente Elegance Blue</h3>
+          <p class="descricao">Pedra azul intensa que representa confiança.</p>
+          <p class="preco">R$ 1.290,00</p>
+
+          <button class="add-cart-btn"
+              onclick="addItemFromPage('Pingente Elegance Blue', 1290.00, 'img/colar1.jpg')">
+              Comprar
+          </button>
+      </div>
+
+      <div class="card-produto">
+          <img src="img/colar2.jpg" alt="Pingente Luz Pura">
+          <h3>Pingente Luz Pura</h3>
+          <p class="descricao">Design leve para transmitir paz e serenidade.</p>
+          <p class="preco">R$ 1.690,00</p>
+
+          <button class="add-cart-btn"
+              onclick="addItemFromPage('Pingente Luz Pura', 1690.00, 'img/colar2.jpg')">
+              Comprar
+          </button>
+      </div>
+
+      <div class="card-produto">
+          <img src="img/colar3.jpg" alt="Pingente Safira Imperial">
+          <h3>Pingente Safira Imperial</h3>
+          <p class="descricao">Elegância real com acabamento impecável.</p>
+          <p class="preco">R$ 2.190,00</p>
+
+          <button class="add-cart-btn"
+              onclick="addItemFromPage('Pingente Safira Imperial', 2190.00, 'img/colar3.jpg')">
+              Comprar
+          </button>
+      </div>
+
+      <div class="card-produto">
+          <img src="img/colar4.jpg" alt="Pingente Delicate Shine">
+          <h3>Pingente Delicate Shine</h3>
+          <p class="descricao">Perfeito para quem busca leveza e brilho.</p>
+          <p class="preco">R$ 1.390,00</p>
+
+          <button class="add-cart-btn"
+              onclick="addItemFromPage('Pingente Delicate Shine', 1390.00, 'img/colar4.jpg')">
+              Comprar
+          </button>
+      </div>
+
+</div>
+</section>
+
+<section class="produtos">
+<h1 id="Colares" style="text-align: center;">Colares</h1>
+  <div class="grid-produtos">
+
+      <div class="card-produto">
+          <img src="img/colar1.jpg" alt="Colar Elegance Sky">
+          <h3>Colar Elegance Sky</h3>
+          <p class="descricao">Brilho celestial em um design atemporal.</p>
+          <p class="preco">R$ 1.290,00</p>
+
+          <button class="add-cart-btn"
+              onclick="addItemFromPage('Colar Elegance Sky', 1290.00, 'img/colar1.jpg')">
+              Comprar
+          </button>
+      </div>
+
+      <div class="card-produto">
+          <img src="img/colar2.jpg" alt="Colar Luz de Cristal">
+          <h3>Colar Luz de Cristal</h3>
+          <p class="descricao">Um toque refinado que ilumina qualquer produção.</p>
+          <p class="preco">R$ 1.690,00</p>
+
+          <button class="add-cart-btn"
+              onclick="addItemFromPage('Colar Luz de Cristal', 1690.00, 'img/colar2.jpg')">
+              Comprar
+          </button>
+      </div>
+
+      <div class="card-produto">
+          <img src="img/colar3.jpg" alt="Colar Blue Luxury">
+          <h3>Colar Blue Luxury</h3>
+          <p class="descricao">Luxo profundo em detalhes que impressionam.</p>
+          <p class="preco">R$ 2.190,00</p>
+
+          <button class="add-cart-btn"
+              onclick="addItemFromPage('Colar Blue Luxury', 2190.00, 'img/colar3.jpg')">
+              Comprar
+          </button>
+      </div>
+
+      <div class="card-produto">
+          <img src="img/colar4.jpg" alt="Colar Serenity Shine">
+          <h3>Colar Serenity Shine</h3>
+          <p class="descricao">Conexão, paz e harmonia traduzidos em uma joia.</p>
+          <p class="preco">R$ 1.390,00</p>
+
+          <button class="add-cart-btn"
+              onclick="addItemFromPage('Colar Serenity Shine', 1390.00, 'img/colar4.jpg')">
+              Comprar
+          </button>
+      </div>
+
+</div>
+
+</section>
+
+<footer>
+    <div class="footer-container">
+      <div>
+        <h3>InovaJoias</h3>
+        <p>Alta joalheria com pedras preciosas e design atemporal desde 1985.</p>
+        <div class="social">
+          <a href="#">📷</a>
+          <a href="#">📘</a>
+          <a href="#">▶️</a>
         </div>
-
-        <div class="card-produto">
-            <img src="img/colar2.jpg" alt="Colar 2">
-            <h3>Colar Fio de Luz</h3>
-            <p class="preco">R$ 1.690,00</p>
-        </div>
-
-        <div class="card-produto">
-            <img src="img/colar3.jpg" alt="Colar 3">
-            <h3>Colar Pure Gold</h3>
-            <p class="preco">R$ 2.190,00</p>
-        </div>
-
-       
-        <div class="card-produto">
-            <img src="img/colar4.jpg" alt="Colar 4">
-            <h3>Colar Delicate</h3>
-            <p class="preco">R$ 1.390,00</p>
-        </div>
-
-
+      </div>
+      <div>
+        <h4>Coleções</h4>
+        <ul>
+          <li>Anéis</li>
+          <li>Colares</li>
+          <li>Pulseiras</li>
+          <li>Brincos</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Serviços</h4>
+        <ul>
+          <li>Joias Personalizadas</li>
+          <li>Manutenção</li>
+          <li>Certificação</li>
+          <li>Avaliação</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p>Av. gilberto de dênis, 2777<br>Patrocínio - MG</p>
+        <p>inovajoias@gmail.com.br<br>(34) 3831-7770</p>
+      </div>
     </div>
-</section>
-<section class="produtos">
-
-  <div class="grid-produtos">
-
-      
-      <div class="card-produto">
-          <img src="img/colar1.jpg" alt="Colar 1">
-          <h3>Colar Elegance</h3>
-          <p class="preco">R$ 1.290,00</p>
-      </div>
-
-      <div class="card-produto">
-          <img src="img/colar2.jpg" alt="Colar 2">
-          <h3>Colar Fio de Luz</h3>
-          <p class="preco">R$ 1.690,00</p>
-      </div>
-
-      <div class="card-produto">
-          <img src="img/colar3.jpg" alt="Colar 3">
-          <h3>Colar Pure Gold</h3>
-          <p class="preco">R$ 2.190,00</p>
-      </div>
-
-     
-      <div class="card-produto">
-          <img src="img/colar4.jpg" alt="Colar 4">
-          <h3>Colar Delicate</h3>
-          <p class="preco">R$ 1.390,00</p>
-      </div>
-
-
-  </div>
-</section>
-<section class="produtos">
-
-  <div class="grid-produtos">
-
-      
-      <div class="card-produto">
-          <img src="img/colar1.jpg" alt="Colar 1">
-          <h3>Colar Elegance</h3>
-          <p class="preco">R$ 1.290,00</p>
-      </div>
-
-      <div class="card-produto">
-          <img src="img/colar2.jpg" alt="Colar 2">
-          <h3>Colar Fio de Luz</h3>
-          <p class="preco">R$ 1.690,00</p>
-      </div>
-
-      <div class="card-produto">
-          <img src="img/colar3.jpg" alt="Colar 3">
-          <h3>Colar Pure Gold</h3>
-          <p class="preco">R$ 2.190,00</p>
-      </div>
-
-     
-      <div class="card-produto">
-          <img src="img/colar4.jpg" alt="Colar 4">
-          <h3>Colar Delicate</h3>
-          <p class="preco">R$ 1.390,00</p>
-      </div>
-
-
-  </div>
-</section>
-<section class="produtos">
-
-  <div class="grid-produtos">
-
-      
-      <div class="card-produto">
-          <img src="img/colar1.jpg" alt="Colar 1">
-          <h3>Colar Elegance</h3>
-          <p class="preco">R$ 1.290,00</p>
-      </div>
-
-      <div class="card-produto">
-          <img src="img/colar2.jpg" alt="Colar 2">
-          <h3>Colar Fio de Luz</h3>
-          <p class="preco">R$ 1.690,00</p>
-      </div>
-
-      <div class="card-produto">
-          <img src="img/colar3.jpg" alt="Colar 3">
-          <h3>Colar Pure Gold</h3>
-          <p class="preco">R$ 2.190,00</p>
-      </div>
-
-     
-      <div class="card-produto">
-          <img src="img/colar4.jpg" alt="Colar 4">
-          <h3>Colar Delicate</h3>
-          <p class="preco">R$ 1.390,00</p>
-      </div>
-
-
-  </div>
-</section>
-
-
-  <script src="script.js"></script>
+    <p class="copy">© 2025 inovajoias. Todos os direitos reservados.</p>
+  </footer>
+  <script src="script1.js"></script>
 </body>
 </html>

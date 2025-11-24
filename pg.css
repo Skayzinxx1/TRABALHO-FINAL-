@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #222;
+}
+
+
+.pay-header {
+  background: #79cfd9;
+  padding: 25px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 26px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #62bbc3;
+}
+
+
+.pay-container {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.voltar {
+  text-decoration: none;
+  color: #79cfd9;
+  font-size: 17px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.voltar:hover {
+  color: #62bbc3;
+}
+
+
+.pay-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  border: 2px solid #79cfd9;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.pay-box h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.preco-total {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+
+.payment-options {
+  display: flex;
+  gap: 35px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.pay-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 12px;
+  border: 2px solid #79cfd9;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.two {
+  display: flex;
+  gap: 20px;
+}
+
+
+.qrcode {
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(45deg, #79cfd9, #e9f9fa);
+  margin: 10px auto;
+  border-radius: 12px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.btn-confirmar {
+  width: 100%;
+  padding: 15px;
+  background: #79cfd9;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.btn-confirmar:hover {
+  background: #62bbc3;
+}
+
+.hidden {
+  display: none;
+}

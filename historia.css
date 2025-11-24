@@ -1,3 +1,129 @@
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: #f9fdfd;
+  color: #1b2a33;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+
+.hero-apresentacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 80px 10%;
+}
+html {
+  scroll-behavior: smooth;
+}
+.hero-texto {
+  max-width: 500px;
+}
+
+.hero-texto h1 {
+  font-size: 48px;
+  color: #0bb7d4;
+}
+
+.hero-texto p {
+  margin: 10px 0 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.hero-img img {
+  width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.btn {
+  padding: 12px 22px;
+  background: #0bb7d4;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: #0889a0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.sessao {
+  padding: 80px 12%;
+  text-align: center;
+}
+.zoom {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.zoom:hover {
+    transform: scale(1.15); 
+}
+
+.texto-centro {
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.grande { font-size: 20px; }
+
+
+.cartoes {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+}
+
+.cartao {
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.timeline {
+  max-width: 700px;
+  margin: 40px auto;
+  padding-left: 25px;
+  border-left: 3px solid #0bb7d4;
+}
+
+.tl-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+.lg {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.lg-img {
+    height: 40px;     
+    width: auto;
+    object-fit: contain;
+}
+
+.bolinha {
+  width: 16px;
+  height: 16px;
+  background: #0bb7d4;
+  border-radius: 50%;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
 
@@ -290,12 +416,14 @@ body {
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
-/* Coleções */
+
 .colecoes {
   text-align: center;
   padding: 100px 10%;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .colecoes h2 {
   font-size: 40px;
   margin-bottom: 10px;
@@ -386,75 +514,4 @@ footer {
 .fade.show {
   opacity: 1;
   transform: translateY(0);
-}
-
-.produtos {
-    padding: 60px 5%;
-    background: #ffffff;
-}
-
-.titulo-produtos {
-    padding: 30px;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    margin-bottom: 50px;
-}
-
-
-.grid-produtos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 40px;
-}
-
-
-.card-produto {
-    text-align: center;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.card-produto img {
-    width: 100%;
-    height: 260px;
-    object-fit: contain;
-    transition: 0.3s ease;
-}
-.lg {
-    display: flex;
-    align-items: center;
-    gap: 10px; 
-}
-
-.lg-img {
-    height: 40px;     
-    width: auto;
-    object-fit: contain;
-}
-html {
-  scroll-behavior: smooth;
-}
-
-.card-produto h3 {
-    margin-top: 15px;
-    font-size: 18px;
-    font-weight: 300;
-}
-
-.preco {
-    color: #444;
-    font-size: 16px;
-    margin-top: 3px;
-}
-
-/* EFEITO HOVER */
-.card-produto:hover img {
-    transform: scale(1.08);
-    filter: brightness(1.15);
-}
-
-.card-produto:hover h3 {
-    color: #00b5c8; /* cor Tiffany-like */
 }

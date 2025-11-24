@@ -404,3 +404,120 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+/* ============================
+   RESPONSIVIDADE GERAL
+============================ */
+
+/* ----- Tela até 1200px ----- */
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .colecao img {
+    width: 350px;
+  }
+}
+
+/* ----- Tela até 992px ----- */
+@media (max-width: 992px) {
+
+  /* Colocar os itens do menu mais próximos */
+  .menu {
+    gap: 25px;
+  }
+
+  .colecao {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .colecao img {
+    width: 70%;
+    max-width: 350px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+ 
+  .navbar {
+    padding: 15px 20px;
+  }
+
+
+  nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: white;
+    display: none;
+    flex-direction: column;
+    padding: 20px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+
+  .dropdown:hover .mega-menu {
+    display: none; 
+  }
+
+ 
+  .hamburger {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+
+  .mega-menu {
+    position: relative;
+    width: 100%;
+    box-shadow: none;
+    padding: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    height: 170px;
+  }
+
+  
+  .hero-content h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .hero-content h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero {
+    height: 80vh;
+  }
+
+  .colecao img {
+    width: 90%;
+  }
+
+  footer {
+    padding: 40px 5%;
+  }
+}

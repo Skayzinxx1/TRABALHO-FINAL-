@@ -530,3 +530,131 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+/* ================================
+      RESPONSIVIDADE SOBRE NÓS
+================================ */
+
+/* Telas até 1200px */
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .titulo {
+    font-size: 2.3rem;
+  }
+
+  .texto-central {
+    font-size: 1.2rem;
+  }
+}
+
+/* Telas até 992px */
+@media (max-width: 992px) {
+
+  .menu {
+    gap: 25px;
+  }
+
+  .titulo {
+    font-size: 2.1rem;
+  }
+}
+
+/* ===========================
+        MENU MOBILE
+=========================== */
+@media (max-width: 768px) {
+
+  /* botão hamburguer aparece */
+  .hamburger {
+    display: block;
+    font-size: 32px;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+
+  /* navbar compacta */
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  /* menu vira dropdown */
+  nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: white;
+    display: none;
+    flex-direction: column;
+    padding: 20px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+
+  .dropdown:hover .mega-menu {
+    display: none;
+  }
+
+  .mega-menu {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    box-shadow: none;
+  }
+
+ 
+  .fundadores-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fundador-card img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .titulo {
+    font-size: 1.9rem;
+  }
+
+  .texto-central {
+    font-size: 1.1rem;
+    padding: 0 20px;
+  }
+}
+
+
+@media (max-width: 550px) {
+  .fundadores-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .titulo {
+    font-size: 1.7rem;
+  }
+
+  .texto-central {
+    font-size: 1rem;
+  }
+
+  footer {
+    padding: 40px 5%;
+  }
+
+  .navbar {
+    padding: 15px;
+  }
+}

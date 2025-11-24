@@ -123,3 +123,77 @@ html {
 .hidden {
   display: none;
 }
+@media (max-width: 768px) {
+
+  .pay-container {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .pay-box {
+    padding: 20px;
+  }
+
+  .pay-header {
+    font-size: 22px;
+    padding: 18px;
+  }
+
+  .preco-total {
+    font-size: 16px;
+  }
+
+  .payment-options {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .two {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btn-confirmar {
+    font-size: 17px;
+    padding: 14px;
+  }
+
+  .qrcode {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .pay-header {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .voltar {
+    font-size: 15px;
+  }
+
+  .pay-box h2 {
+    font-size: 18px;
+  }
+
+  .preco-total {
+    font-size: 15px;
+  }
+
+  .qrcode {
+    width: 130px;
+    height: 130px;
+  }
+
+  .btn-confirmar {
+    font-size: 16px;
+  }
+}

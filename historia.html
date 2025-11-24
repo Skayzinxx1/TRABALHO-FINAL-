@@ -6,11 +6,19 @@
   <title>Historia - Inova Joias</title>
   <link rel="stylesheet" href="historia.css">
 </head>
-
+<script>
+  const hamburguer = document.querySelector(".hamburger");
+  const nav = document.querySelector("nav");
+  
+  hamburguer.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+  </script>
 <body>
 
   
   <header class="navbar">
+    <div class="hamburger"></div>
     <div class="lg">
     <a class="zoom" href="index.html"><img src="img/Gemini_Generated_Image_98fier98fier98fi (1) (1).png" alt="Logo" class="lg-img"></a>
 </div>
@@ -60,7 +68,7 @@
           <div class="mega-menu">
             <div class="mega-column">
               <h3>Categoria</h3>
-              <a href="garantia.css">Garantia</a>
+              <a href="garantia.html">Garantia</a>
               <a href="cuidados.html">Cuidados e convervação</a>
               <a href="confianca.html">confiança</a>
             </div>
@@ -203,6 +211,6 @@
     </div>
     <p class="copy">© 2025 inovajoias. Todos os direitos reservados.</p>
   </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

@@ -8,3 +8,9 @@ const observer = new IntersectionObserver(entries => {
 });
 
 document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+const hamburguer = document.querySelector(".hamburger");
+const nav = document.querySelector("nav");
+
+hamburguer.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});

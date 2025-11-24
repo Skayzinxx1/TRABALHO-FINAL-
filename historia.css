@@ -515,3 +515,148 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+/* ================================
+      RESPONSIVIDADE HISTÓRIA
+================================ */
+
+/* --- 1024px (tablet) --- */
+@media (max-width: 1024px) {
+
+  .hero-apresentacao {
+    padding: 60px 8%;
+    gap: 30px;
+  }
+
+  .hero-texto h1 {
+    font-size: 40px;
+  }
+
+  .hero-img img {
+    width: 350px;
+  }
+
+  .cartoes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+    font-size: 32px;
+    cursor: pointer;
+    margin-left: 15px;
+    z-index: 999;
+  }
+
+
+  nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background: white;
+    display: none;
+    flex-direction: column;
+    padding: 15px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    z-index: 900;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+
+  .dropdown:hover .mega-menu {
+    display: none !important;
+  }
+
+  .mega-menu {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    box-shadow: none;
+    grid-template-columns: 1fr;
+  }
+
+
+  .hero-apresentacao {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 6%;
+  }
+
+  .hero-texto h1 {
+    font-size: 34px;
+  }
+
+  .hero-img img {
+    width: 300px;
+  }
+
+
+  .cartoes {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding-left: 15px;
+    margin-left: 10px;
+  }
+
+  .bolinha {
+    left: -22px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .hero-texto h1 {
+    font-size: 28px;
+  }
+
+  .hero-texto p {
+    font-size: 16px;
+  }
+
+  .hero-img img {
+    width: 240px;
+  }
+
+  .sessao {
+    padding: 60px 6%;
+  }
+
+  .grande {
+    font-size: 18px;
+  }
+
+  .cartao {
+    padding: 20px;
+  }
+
+  footer {
+    padding: 40px 8%;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}

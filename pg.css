@@ -23,7 +23,8 @@ body {
   letter-spacing: 1px;
   border-bottom: 3px solid #62bbc3;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
 
 .pay-container {
   max-width: 650px;

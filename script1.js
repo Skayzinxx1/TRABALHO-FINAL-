@@ -58,7 +58,7 @@ function renderCart() {
     cartTotal.textContent = total.toFixed(2);
 
   
-    localStorage.setItem("cartTotal", total.toFixed(2));
+   
 }
 
 

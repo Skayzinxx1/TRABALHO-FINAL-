@@ -33,7 +33,7 @@
     }
 
     .galeria img {
-        width: 100%;
+        width: 180%;
         border-radius: 6px;
     }
 
@@ -79,6 +79,64 @@
         font-weight: 600;
         border: none;
     }
+
+@media (max-width: 768px) {
+
+
+    .produto-page {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .produto-info h1 {
+        font-size: 20px;
+    }
+
+    .preco {
+        font-size: 18px;
+    }
+
+    .btn-grande,
+    .btn-comprarapida,
+    .add-cart-btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .produto-info h1 {
+        font-size: 19px;
+    }
+
+    .preco {
+        font-size: 17px;
+    }
+
+    .tamanhos button {
+        padding: 6px 9px;
+    }
+
+    .guia-tamanho {
+        font-size: 13px;
+    }
+}
 
     .btn-comprarapida {
         width: 100%;
@@ -359,10 +417,8 @@
 
    
     <div class="galeria">
-        <img src="img/anel1.png">
-        <img src="img/anel2.png">
-        <img src="img/anel3.png">
-        <img src="img/anel4.png">
+        <img src="../jj/aliancaspratdiamantada.webp">
+       
     </div>
 
 
@@ -383,10 +439,9 @@
             <button>18</button>
         </div>
 
-        <div class="guia-tamanho">📏 GUIA DE TAMANHO</div>
-
+       <a href="../guia.html"><div class="guia-tamanho">📏 GUIA DE TAMANHO</div></a>
         <button class="add-cart-btn"
-         onclick="addItemFromPage('Aliança Prata Soft Inova ', 1590.00, 'img/anel1.png')">
+         onclick="addItemFromPage('Aliança Prata Soft Inova ', 1590.00, '../jj/aliancaspratdiamantada.webp')">
           Adicionar ao carrinho
         </button>
         <a href="../aliança.html#3mm"><button class="btn-comprarapida">Voltar</button></a>

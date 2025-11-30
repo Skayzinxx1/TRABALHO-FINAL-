@@ -14,83 +14,6 @@
         padding: 40px;
     }
 
-    .produto-page {
-        width: 90%;
-        max-width: 1200px;
-        margin: auto;
-        background: #fff;
-        padding: 30px;
-        border-radius: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
-    }
-
-    .galeria {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-    }
-
-    .galeria img {
-        width: 180%;
-        border-radius: 6px;
-    }
-
-    .produto-info h1 {
-        font-size: 22px;
-        font-weight: 600;
-        margin-bottom: 6px;
-    }
-
-    .metal {
-        font-size: 13px;
-        color: #444;
-        margin-bottom: 10px;
-    }
-
-    .preco {
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 20px;
-    }
-
-    .tamanhos {
-        margin-bottom: 20px;
-    }
-
-    .tamanhos button {
-        border: 1px solid #222;
-        background: none;
-        padding: 7px 12px;
-        margin-right: 6px;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .btn-grande {
-        width: 100%;
-        background: #cfcfcf;
-        padding: 14px;
-        margin-top: 10px;
-        border-radius: 5px;
-        text-align: center;
-        cursor: pointer;
-        font-weight: 600;
-        border: none;
-    }
-
-    .btn-comprarapida {
-        width: 100%;
-        background: #5dd6d4;
-        padding: 14px;
-        margin-top: 10px;
-        border-radius: 5px;
-        text-align: center;
-        cursor: pointer;
-        font-weight: 600;
-        border: none;
-    }
 @media (max-width: 768px) {
 
 
@@ -149,6 +72,83 @@
     }
 }
 
+    .produto-page {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .galeria img {
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    .produto-info h1 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+
+    .metal {
+        font-size: 13px;
+        color: #444;
+        margin-bottom: 10px;
+    }
+
+    .preco {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .tamanhos {
+        margin-bottom: 20px;
+    }
+
+    .tamanhos button {
+        border: 1px solid #222;
+        background: none;
+        padding: 7px 12px;
+        margin-right: 6px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .btn-grande {
+        width: 100%;
+        background: #cfcfcf;
+        padding: 14px;
+        margin-top: 10px;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: 600;
+        border: none;
+    }
+
+    .btn-comprarapida {
+        width: 100%;
+        background: #5dd6d4;
+        padding: 14px;
+        margin-top: 10px;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: 600;
+        border: none;
+    }
 
     .vantagens {
         margin-top: 20px;
@@ -417,18 +417,20 @@
 
    
     <div class="galeria">
-        <img src="../jj/Pingente-mperiale.webp">
-      
+        <img src="img/anel1.png">
+        <img src="img/anel2.png">
+        <img src="img/anel3.png">
+        <img src="img/anel4.png">
     </div>
 
 
     
     <div class="produto-info">
 
-        <h1>Pingente Prata Safira Imperial Inova</h1>
+        <h1>Aliança Prata Clássica Inova</h1>
         <div class="metal">Metal: Prata 925</div>
 
-        <div class="preco">R$ 2.190,00</div>
+        <div class="preco">R$ 3.440,00</div>
 
         <div class="tamanhos">
             <strong>TAMANHO</strong><br><br>
@@ -439,19 +441,19 @@
             <button>18</button>
         </div>
 
-         <a href="../guia.html"><div class="guia-tamanho">📏 GUIA DE TAMANHO</div></a>
+        <div class="guia-tamanho">📏 GUIA DE TAMANHO</div>
 
         <button class="add-cart-btn"
-         onclick="addItemFromPage('Pingente Prata Safira Imperial Inova', 2190.00, '../jj/Pingente-mperiale.webp')">
+         onclick="addItemFromPage('Aliança Prata Clássica Inova', 3440.00, 'img/anel1.png')">
           Adicionar ao carrinho
         </button>
-        <a href="../joias.html#Pingentes"><button class="btn-comprarapida">Voltar</button></a>
+        <a href="../aliança.html#Namoro"><button class="btn-comprarapida">Voltar</button></a>
 
         <div class="vantagens">
             <div>🛍️ Parcelamento em até 10x sem juros</div>
             <div>🔄 Não serviu? Troque gratuitamente.</div>
             <div>🎁 Embalagem para presente</div>
-             <div>🚚 Frete GRÁTIS em compras acima de partir de R$ 290,00</div>
+            <div>🚚 Frete GRÁTIS em compras acima de partir de R$ 290,00</div>
         </div>
 
     </div>

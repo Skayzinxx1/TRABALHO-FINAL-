@@ -18,7 +18,51 @@
     background: #fff;
     border-bottom: 1px solid #e4e4e4;
     font-family: "Helvetica Neue", sans-serif;
-}</style>
+}
+.botoes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.butao {
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease;
+}
+
+
+.preca {
+    background-color: rgb(30, 175, 175);
+    color: white;
+    box-shadow: 0 4px 12px rgba(123, 92, 255, 0.4);
+}
+
+.preca:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 247, 255, 0.699);
+}
+
+
+.preco {
+    background: #ffffff;
+    color: #7b5cff;
+    border: 2px solid #5b4ca0;
+}
+
+.preco:hover {
+    background: #1cafdb;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 247, 255, 0.699);
+}
+
+</style>
 <body>
           <nav class="navbar navbar-expand-lg bg-body-tertiary ">
   <div class="container-fluid">
@@ -130,10 +174,11 @@
       <p>
         Descubra peças únicas de alta joalheria, criadas com pedras preciosas em tons de ciano e diamantes deslumbrantes.
       </p>
-      <div class="botoes">
+      <div class="botoes"> 
         <a href="joias.html" class="butao preca">Explorar Coleção</a>
         <a href="aliança.html" class="butao preco">Compre sua aliança</a>
-      </div>
+    </div>
+    
     </div>
     <div class="imagem">
       <img src="img/earring-collection.jpg" alt="Colar Aquamarine" />
